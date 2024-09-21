@@ -1,0 +1,42 @@
+{
+    "Clube da Luta": {
+        "ano": 1999,
+        "diretor": "David Fincher",
+        "avalia\u00e7\u00e3o": 4.7
+    },
+    "O Poderoso Chef\u00e3o": {
+        "ano": 1972,
+        "diretor": "Mario Puzo",
+        "avalia\u00e7\u00e3o": 4.9
+    },
+    "Interestelar": {
+        "ano": 2014,
+        "diretor": "Christopher Nolan",
+        "avalia\u00e7\u00e3o": 4.6
+    },
+    "O Abutre": {
+        "ano": 2014,
+        "diretor": "Dan Gilroy",
+        "avalia\u00e7\u00e3o": 4.5
+    },
+    "Forrest Gump": {
+        "ano": 1994,
+        "diretor": "Robert Zemeckis",
+        "avalia\u00e7\u00e3o": 4.7
+    },
+    "Batman: O Cavaleiro das Trevas": {
+        "ano": 2008,
+        "diretor": "Christopher Nolan",
+        "avalia\u00e7\u00e3o": 4.7
+    },
+    "Kill Bill - Volume 1": {
+        "ano": 2003,
+        "diretor": "Quentin Tarantino",
+        "avalia\u00e7\u00e3o": 4.3
+    },
+    "Kill Bill - Volume 2 ": {
+        "ano": 2004,
+        "diretor": "Quentin Tarantino",
+        "avalia\u00e7\u00e3o": 4.4
+    }
+}
