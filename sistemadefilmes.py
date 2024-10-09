@@ -19,11 +19,11 @@ def salvarfilmes(arqfilmes, filmes): # 'arqfilmes' é o arquivo json e 'filmes' 
         # de forma a ser mais legivel com indentação de 4 espaços
 
 arqfilmes = 'arqfilmes.json'
-filmes = carregarfilmes(arqfilmes) # durante toda a execução do codigo filmes será a funçao carregarfilmes com o parâmetro do arquivo json.
+filmes = carregarfilmes(arqfilmes) # durante toda a execução do codigo "filmes" será a funçao carregarfilmes com o parâmetro do arquivo json.
 # função para exibição do menu.
 def menu():
     print(f"\n{len(filmes)} filmes disponíveis no momento!\nEscolha uma dessas opções: ") # len(filmes) sempre retornará o numero total de chaves do dicionário.
-    print("1 -> Exibir dicionario de filmes completo ou trecho da mesma (ex: filmes na posicão 20-35)")
+    print("1 -> Exibir dicionario de filmes completo ou trecho (ex: filmes na posicão 20-35)")
     print("2 -> Adicionar filme ao dicionario (armazenamento máximo: 50)")
     print("3 -> Remover filme do dicionario")
     print("4 -> Procurar filme por nome/diretor/ano/avaliacão")
@@ -51,7 +51,7 @@ def op1b():
         if idx >= posicao1-1 and idx <= posicao2-1: # essa condicional verifica se o indice atual ta entre a 
             # posicao1 e a posicao2, e o -1 é pra voltar pra posicao 0 por que o indice começa em 0          
             print(f"\n{idx+1}° {chave} {valor}")
-def submenu1(): # submenu para primeira opcao pra deixar o codigo mais limpo
+def submenu1(filmes): # submenu para primeira opcao pra deixar o codigo mais limpo
     opcao2 = input("Exibir lista completa ou trecho? (c = completo / t = trecho): ").lower()
     while opcao2 not in ["c", "t"]:
         print("Opção inválida. Tente novamente.")
@@ -72,8 +72,8 @@ def op2(filmes, arqfilmes):
         filmes[nome] = {"ano": ano, "diretor": diretor, "avaliação": avaliacao} # criacao de um novo dicionario apartir dessas definicoes.
         salvarfilmes(arqfilmes, filmes) # funcao pra salvar esse novo dicionario.
         print(f"{nome} adicionado com sucesso!")
-# funcao para opcao 3 no menu 
-# como o nome é a chave principal, pode se usar disso para deletar um conteudo inteiro do dicionario
+# funcao para opcao 3 no menu.
+# como o nome é a chave principal, pode se usar disso para deletar um conteudo inteiro do dicionario.
 def op3(filmes, arqfilmes): 
     nome = str(input("nome do filme a ser removido: ")).strip().lower()
     filmeremovido = False # controle de verificaçao se filme foi removido ou nao
@@ -151,6 +151,7 @@ def submenu4(filmes): # funcao pra evitar repeticao.
         print("Opção inválida. Tente novamente.")
         opcao2 = input("\nn -> nome\na -> ano\nd -> diretor\nav -> avaliação\n").lower()
     opcoesvalidas[opcao2](filmes)
+
 # on = começa o loop do menu
 # off = termina o loop do menu
 on = True
@@ -179,3 +180,7 @@ while on:
         print("Obrigado por utilizar nosso sistema...")
         on = off 
         # kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
+# fazer um "login/cadastro"
+# deixar o codigo mais enxuto 
+# dar um jeito nesse while True
