@@ -19,11 +19,6 @@
         "diretor": "Dan Gilroy",
         "avalia\u00e7\u00e3o": 4.5
     },
-    "Forrest Gump": {
-        "ano": 1994,
-        "diretor": "Robert Zemeckis",
-        "avalia\u00e7\u00e3o": 4.7
-    },
     "Batman: O Cavaleiro das Trevas": {
         "ano": 2008,
         "diretor": "Christopher Nolan",
@@ -38,5 +33,15 @@
         "ano": 2004,
         "diretor": "Quentin Tarantino",
         "avalia\u00e7\u00e3o": 4.4
+    },
+    "Velozes e Furiosos 2": {
+        "ano": 2003,
+        "diretor": "Jonh Singleton",
+        "avalia\u00e7\u00e3o": 4.1
+    },
+    "Velozes e Furiosos 4": {
+        "ano": 2009,
+        "diretor": "Justin Lin",
+        "avalia\u00e7\u00e3o": 4.2
     }
 }
